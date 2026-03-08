@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026年数字经济行业发展趋势报告发布 - 未来职造</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind自定义配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E3A8A', // 主色调深蓝
+                        secondary: '#3B82F6', // 辅助色亮蓝
+                        tech: {
+                            50: '#EFF6FF',
+                            100: '#DBEAFE',
+                            200: '#BFDBFE',
+                            800: '#1E40AF',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            /* 顶部导航项样式 */
+            .nav-item {
+                @apply px-4 py-2 rounded-md transition-all duration-300 hover:bg-secondary/20 hover:text-white;
+            }
+            /* 详情页卡片样式 */
+            .detail-card {
+                @apply bg-white rounded-xl shadow-sm border border-tech-200/50 p-6 md:p-8;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 min-h-screen flex flex-col">
+    <!-- 头部导航 -->
+    <header class="bg-primary text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <!-- Logo和标题 -->
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-briefcase text-2xl"></i>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold">未来职造：专业·岗位技能·招聘信息指南网</h1>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="menuBtn" class="md:hidden text-white text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                
+                <!-- 导航菜单 - 桌面端 -->
+                <nav class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="nav-item">网站首页</a>
+                    <a href="majors.html" class="nav-item">专业列表</a>
+                    <a href="skills.html" class="nav-item">岗位技能</a>
+                    <a href="recruitments.html" class="nav-item">招聘信息</a>
+                    <a href="news.html" class="nav-item bg-secondary/30 font-medium">就业新闻</a>
+                    <a href="policies.html" class="nav-item">就业政策</a>
+                    <a href="interview.html" class="nav-item">面试技巧</a>
+                </nav>
+            </div>
+            
+            <!-- 移动端导航菜单 -->
+            <nav id="mobileMenu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="nav-item">网站首页</a>
+                    <a href="majors.html" class="nav-item">专业列表</a>
+                    <a href="skills.html" class="nav-item">岗位技能</a>
+                    <a href="recruitments.html" class="nav-item">招聘信息</a>
+                    <a href="news.html" class="nav-item bg-secondary/30 font-medium">就业新闻</a>
+                    <a href="policies.html" class="nav-item">就业政策</a>
+                    <a href="interview.html" class="nav-item">面试技巧</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="flex-1 container mx-auto px-4 py-8">
+        <!-- 返回按钮 -->
+        <div class="mb-6">
+            <a href="news.html" class="inline-flex items-center text-secondary hover:text-primary transition-colors">
+                <i class="fa-solid fa-arrow-left mr-2"></i>
+                <span>返回新闻列表</span>
+            </a>
+        </div>
+
+        <!-- 新闻详情卡片 -->
+        <div class="max-w-4xl mx-auto detail-card">
+            <!-- 新闻标题 -->
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-primary mb-4">2026年数字经济行业发展趋势报告发布</h2>
+            
+            <!-- 新闻元信息（发布日期） -->
+            <div class="flex items-center text-gray-500 mb-6 pb-4 border-b border-tech-200/50">
+                <i class="fa-solid fa-calendar text-secondary mr-2"></i>
+                <span>发布日期：2026-02-20</span>
+            </div>
+            
+            <!-- 新闻缩略图 -->
+            <div class="mb-8 rounded-xl overflow-hidden shadow-md">
+                <img src="https://picsum.photos/id/60/1200/600" alt="2026年数字经济行业发展趋势报告" class="w-full h-auto object-cover">
+            </div>
+            
+            <!-- 新闻正文内容 -->
+            <div class="prose max-w-none text-gray-700 leading-relaxed">
+                <p class="mb-4">近日，工业和信息化部联合国家统计局发布《2026年数字经济行业发展趋势报告》（以下简称《报告》），全面分析了我国数字经济发展现状及未来趋势，为行业发展和人才培养提供了重要指引。</p>
+                
+                <p class="mb-4">《报告》显示，2025年我国数字经济核心产业增加值达到8.6万亿元，占GDP比重提升至14.2%，预计2026年这一比重将进一步提升至15%以上。其中，人工智能、大数据、云计算、区块链等新兴数字产业增速最快，同比增长超过25%。</p>
+                
+                <h3 class="text-xl font-semibold text-primary mt-6 mb-3">一、数字经济发展三大核心趋势</h3>
+                
+                <p class="mb-4"><strong>1. 产业数字化深度融合</strong>：制造业、农业、服务业等传统产业加速数字化转型，工业互联网平台普及率达到60%以上，智能制造、智慧农业、数字文旅等新业态成为经济增长新引擎。</p>
+                
+                <p class="mb-4"><strong>2. 数字技术创新突破</strong>：大模型技术向行业应用深度渗透，通用人工智能（AGI）研发取得阶段性进展，算力基础设施建设加快，东数西算工程全面落地，全国数据中心算力规模年增长30%。</p>
+                
+                <p class="mb-4"><strong>3. 数字治理体系完善</strong>：数据安全法、个人信息保护法等法律法规落地实施，数字经济治理能力显著提升，数据要素市场化配置改革取得重要突破，数据交易市场规模突破1000亿元。</p>
+                
+                <h3 class="text-xl font-semibold text-primary mt-6 mb-3">二、就业市场影响分析</h3>
+                
+                <p class="mb-4">《报告》指出，数字经济的快速发展将带来显著的就业拉动效应，预计未来三年数字经济领域将新增就业岗位超200万个，其中高端技术岗位占比达40%，主要集中在以下方向：</p>
+                
+                <ul class="list-disc pl-6 mb-4 space-y-2">
+                    <li>人工智能工程师：包括算法研发、模型训练、行业应用等方向，年薪普遍在30-80万元</li>
+                    <li>大数据分析师：具备数据挖掘、可视化、商业分析能力的复合型人才需求旺盛</li>
+                    <li>工业互联网工程师：熟悉工业场景和数字化技术的跨界人才缺口达50万人</li>
+                    <li>网络安全工程师：数据安全、网络攻防、隐私保护相关岗位需求年增长40%</li>
+                    <li>数字运营师：电商、直播、内容平台等数字运营人才成为企业核心需求</li>
+                </ul>
+                
+                <h3 class="text-xl font-semibold text-primary mt-6 mb-3">三、人才培养建议</h3>
+                
+                <p class="mb-4">针对数字经济人才需求特点，《报告》提出以下建议：</p>
+                
+                <p class="mb-4">1. 高校应优化专业设置，加强人工智能、大数据、网络安全等新兴专业建设，深化产教融合，与企业共建实习实训基地。</p>
+                
+                <p class="mb-4">2. 职业技能培训应注重实战能力培养，推广“学历+技能”双证书制度，提升劳动者数字技能水平。</p>
+                
+                <p class="mb-4">3. 企业应完善人才激励机制，建立数字化人才职业发展通道，吸引和留住核心人才。</p>
+                
+                <p class="mb-4">4. 政府应加大数字人才培养投入，实施数字技能提升行动，对参加数字技能培训的人员给予补贴支持。</p>
+                
+                <p class="mt-6 text-gray-600 italic">本文数据来源：工业和信息化部《2026年数字经济行业发展趋势报告》</p>
+            </div>
+            
+            <!-- 相关新闻推荐 -->
+            <div class="mt-10 pt-6 border-t border-tech-200/50">
+                <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                    <i class="fa-solid fa-link text-secondary mr-2"></i>相关新闻推荐
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="#" class="p-3 rounded-lg bg-tech-50 hover:bg-tech-100 transition-colors flex items-center">
+                        <i class="fa-solid fa-angle-right text-secondary mr-3"></i>
+                        <span class="text-gray-800 hover:text-primary truncate">新能源行业人才需求同比增长35%</span>
+                    </a>
+                    <a href="#" class="p-3 rounded-lg bg-tech-50 hover:bg-tech-100 transition-colors flex items-center">
+                        <i class="fa-solid fa-angle-right text-secondary mr-3"></i>
+                        <span class="text-gray-800 hover:text-primary truncate">人工智能行业迎来规范化发展新阶段</span>
+                    </a>
+                    <a href="#" class="p-3 rounded-lg bg-tech-50 hover:bg-tech-100 transition-colors flex items-center">
+                        <i class="fa-solid fa-angle-right text-secondary mr-3"></i>
+                        <span class="text-gray-800 hover:text-primary truncate">跨境电商行业政策红利持续释放</span>
+                    </a>
+                    <a href="#" class="p-3 rounded-lg bg-tech-50 hover:bg-tech-100 transition-colors flex items-center">
+                        <i class="fa-solid fa-angle-right text-secondary mr-3"></i>
+                        <span class="text-gray-800 hover:text-primary truncate">2026年春招市场呈现三大新趋势</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white py-6 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 未来职造 - 专业·岗位技能·招聘信息指南网 版权所有</p>
+            <p class="text-sm text-tech-200 mt-2">本网站仅提供就业信息参考，具体以官方发布为准</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript交互逻辑 -->
+    <script>
+        // 移动端菜单切换
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>

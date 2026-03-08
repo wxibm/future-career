@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未来职造：专业·岗位技能·招聘信息指南网</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind自定义配置 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E3A8A', // 主色调深蓝
+                        secondary: '#3B82F6', // 辅助色亮蓝
+                        tech: {
+                            50: '#EFF6FF',
+                            100: '#DBEAFE',
+                            200: '#BFDBFE',
+                            800: '#1E40AF',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            /* 顶部导航项样式 */
+            .nav-item {
+                @apply px-4 py-2 rounded-md transition-all duration-300 hover:bg-secondary/20 hover:text-white;
+            }
+            /* 专业导航列表项 */
+            .major-item {
+                @apply p-3 rounded-lg transition-all duration-300 hover:bg-tech-100 hover:text-primary font-medium border-l-4 border-transparent hover:border-secondary cursor-pointer;
+            }
+            /* 岗位列表项 */
+            .job-item {
+                @apply p-3 rounded-lg transition-all duration-300 hover:bg-tech-100 hover:text-primary font-medium border-l-4 border-transparent hover:border-secondary cursor-pointer;
+            }
+            /* 招聘列表项 */
+            .recruit-item {
+                @apply p-4 rounded-xl bg-white shadow-sm border border-tech-200/50 transition-all duration-300 hover:shadow-md hover:bg-tech-50;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 min-h-screen flex flex-col">
+    <!-- 头部导航 -->
+    <header class="bg-primary text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <!-- Logo和标题 -->
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-briefcase text-2xl"></i>
+                    </div>
+                    <h1 class="text-xl md:text-2xl font-bold">未来职造：专业·岗位技能·招聘信息指南网</h1>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="menuBtn" class="md:hidden text-white text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                
+                <!-- 导航菜单 - 桌面端 -->
+                <nav class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="nav-item">网站首页</a>
+                    <a href="majors.html" class="nav-item">专业列表</a>
+                    <a href="skills.html" class="nav-item">岗位技能</a>
+                    <a href="recruitments.html" class="nav-item bg-secondary/30 font-medium">招聘信息</a>
+                    <a href="news.html" class="nav-item">就业新闻</a>
+                    <a href="policies.html" class="nav-item">就业政策</a>
+                    <a href="interview.html" class="nav-item">面试技巧</a>
+                </nav>
+            </div>
+            
+            <!-- 移动端导航菜单 -->
+            <nav id="mobileMenu" class="md:hidden hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="nav-item">网站首页</a>
+                    <a href="majors.html" class="nav-item">专业列表</a>
+                    <a href="skills.html" class="nav-item">岗位技能</a>
+                    <a href="recruitments.html" class="nav-item bg-secondary/30 font-medium">招聘信息</a>
+                    <a href="news.html" class="nav-item">就业新闻</a>
+                    <a href="policies.html" class="nav-item">就业政策</a>
+                    <a href="interview.html" class="nav-item">面试技巧</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="flex-1 container mx-auto px-4 py-8">
+        <!-- 页面标题 -->
+        <div class="mb-8">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-primary flex items-center">
+                <i class="fa-solid fa-briefcase text-secondary mr-3"></i>招聘信息
+            </h2>
+            <p class="text-gray-600 mt-2">精准匹配专业对应的岗位及最新招聘信息，助力高效就业</p>
+        </div>
+
+        <!-- 三栏布局 -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- 左侧：专业导航（纵向列表） -->
+            <div class="lg:col-span-3 bg-white rounded-xl shadow-sm p-4 h-fit sticky top-24">
+                <h3 class="text-xl font-semibold text-primary mb-4 flex items-center border-b border-tech-200 pb-3">
+                    <i class="fa-solid fa-graduation-cap text-secondary mr-2"></i>专业导航
+                </h3>
+                <div id="majorNav" class="space-y-1">
+                    <!-- 专业列表会通过JS生成 -->
+                </div>
+            </div>
+
+            <!-- 中间：岗位列表（纵向列表） -->
+            <div class="lg:col-span-4 bg-white rounded-xl shadow-sm p-4">
+                <h3 class="text-xl font-semibold text-primary mb-4 flex items-center border-b border-tech-200 pb-3">
+                    <i class="fa-solid fa-briefcase text-secondary mr-2"></i>岗位列表
+                </h3>
+                <div id="jobList" class="space-y-1">
+                    <!-- 岗位列表会通过JS生成 -->
+                </div>
+            </div>
+
+            <!-- 右侧：招聘列表（纵向列表） -->
+            <div class="lg:col-span-5 bg-white rounded-xl shadow-sm p-4">
+                <h3 class="text-xl font-semibold text-primary mb-4 flex items-center border-b border-tech-200 pb-3">
+                    <i class="fa-solid fa-bullhorn text-secondary mr-2"></i>最新招聘信息
+                </h3>
+                <div id="recruitList" class="space-y-3 max-h-[700px] overflow-y-auto pr-2">
+                    <!-- 招聘列表会通过JS生成 -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white py-6 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 未来职造 - 专业·岗位技能·招聘信息指南网 版权所有</p>
+            <p class="text-sm text-tech-200 mt-2">本网站仅提供就业信息参考，具体以官方发布为准</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript交互逻辑 -->
+    <script>
+        // 全局变量
+        const majorNav = document.getElementById('majorNav');
+        const jobList = document.getElementById('jobList');
+        const recruitList = document.getElementById('recruitList');
+        let majorData = []; // 从majors.json加载的专业数据
+        let jobData = [];   // 从skills.json加载的岗位数据
+        let recruitData = []; // 从recruitments.json加载的招聘数据
+        let selectedMajorId = 1; // 默认选中第一个专业
+        let selectedJobId = 1;   // 默认选中第一个岗位
+
+        // 移动端菜单切换
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // 1. 渲染专业导航列表（适配新的majorData结构）
+        function renderMajorNav() {
+            majorNav.innerHTML = '';
+            if (majorData.length === 0) {
+                majorNav.innerHTML = '<div class="p-3 text-gray-500 text-center">加载中...</div>';
+                return;
+            }
+            majorData.forEach(major => {
+                const item = document.createElement('div');
+                item.className = `major-item ${selectedMajorId === major.id ? 'bg-tech-100 text-primary border-secondary' : ''}`;
+                item.innerHTML = `${major.name}（${major.major_code}）`;
+                
+                // 点击专业切换岗位列表
+                item.addEventListener('click', () => {
+                    selectedMajorId = major.id;
+                    // 找到当前专业对应的第一个岗位ID
+                    const firstJob = jobData.find(job => job.major_ids.includes(selectedMajorId));
+                    selectedJobId = firstJob ? firstJob.id : 1;
+                    renderMajorNav(); // 重新渲染专业列表（高亮选中项）
+                    renderJobList();  // 渲染对应岗位列表
+                    renderRecruitList(); // 渲染对应招聘列表
+                });
+                
+                majorNav.appendChild(item);
+            });
+        }
+
+        // 2. 渲染岗位列表（根据选中的专业，适配新的jobData结构）
+        function renderJobList() {
+            jobList.innerHTML = '';
+            if (jobData.length === 0) {
+                jobList.innerHTML = '<div class="p-3 text-gray-500 text-center">加载中...</div>';
+                return;
+            }
+            // 筛选当前专业对应的岗位（jobData中的major_ids包含selectedMajorId）
+            const filteredJobs = jobData.filter(job => job.major_ids.includes(selectedMajorId));
+            
+            if (filteredJobs.length === 0) {
+                jobList.innerHTML = '<div class="p-3 text-gray-500 text-center">暂无相关岗位信息</div>';
+                return;
+            }
+            
+            filteredJobs.forEach(job => {
+                // 兼容skills.json中id=2的name字段（其他是title）
+                const jobTitle = job.title || job.name;
+                const item = document.createElement('div');
+                item.className = `job-item ${selectedJobId === job.id ? 'bg-tech-100 text-primary border-secondary' : ''}`;
+                item.innerHTML = jobTitle;
+                
+                // 点击岗位切换招聘列表
+                item.addEventListener('click', () => {
+                    selectedJobId = job.id;
+                    renderJobList(); // 重新渲染岗位列表（高亮选中项）
+                    renderRecruitList(); // 渲染对应招聘列表
+                });
+                
+                jobList.appendChild(item);
+            });
+        }
+
+        // 3. 渲染招聘列表
+        function renderRecruitList() {
+            recruitList.innerHTML = '';
+            if (recruitData.length === 0) {
+                recruitList.innerHTML = '<div class="p-4 text-gray-500 text-center">招聘数据加载中...</div>';
+                return;
+            }
+            // 筛选当前岗位对应的招聘信息
+            const filteredRecruits = recruitData.filter(recruit => recruit.skills_id === selectedJobId);
+            
+            if (filteredRecruits.length === 0) {
+                recruitList.innerHTML = '<div class="p-4 text-gray-500 text-center">暂无相关招聘信息</div>';
+                return;
+            }
+            
+            filteredRecruits.forEach(recruit => {
+                const item = document.createElement('div');
+                item.className = 'recruit-item';
+                // 招聘项内容：公司logo居左，其余信息居右
+                item.innerHTML = `
+                    <div class="flex items-start">
+                        <!-- 公司logo -->
+                        <img src="${recruit.company_logo}" alt="${recruit.company_name}" class="w-20 h-20 rounded-lg object-cover mr-4 flex-shrink-0">
+                        <!-- 招聘信息 -->
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="text-lg font-semibold text-primary">${recruit.title}</h4>
+                                <span class="text-sm text-gray-600 font-medium">${recruit.company_name}</span>
+                            </div>
+                            <p class="text-sm text-gray-600 line-clamp-4 mb-2">${recruit.job_description}</p>
+                            <a href="recruitments-detail.html?id=${recruit.id}" target="_blank" class="text-secondary hover:text-primary font-medium text-sm flex items-center">
+                                查看详情 <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                `;
+                recruitList.appendChild(item);
+            });
+        }
+
+        // 加载JSON数据并初始化页面
+        async function initPage() {
+            try {
+                // 并行加载三个JSON文件
+                const [majorRes, jobRes, recruitRes] = await Promise.all([
+                    fetch('data/majors.json'),
+                    fetch('data/skills.json'),
+                    fetch('data/recruitments.json') // 加载招聘数据
+                ]);
+                
+                // 解析JSON数据
+                majorData = await majorRes.json();
+                jobData = await jobRes.json();
+                recruitData = await recruitRes.json();
+                
+                // 设置默认选中值（取第一个专业和对应的第一个岗位）
+                if (majorData.length > 0) {
+                    selectedMajorId = majorData[0].id;
+                    // 找到第一个专业对应的第一个岗位
+                    const firstJob = jobData.find(job => job.major_ids.includes(selectedMajorId));
+                    selectedJobId = firstJob ? firstJob.id : (jobData.length > 0 ? jobData[0].id : 1);
+                }
+                
+                // 初始化渲染
+                renderMajorNav();
+                renderJobList();
+                renderRecruitList();
+            } catch (error) {
+                console.error('加载数据失败:', error);
+                majorNav.innerHTML = '<div class="p-3 text-red-500 text-center">专业数据加载失败</div>';
+                jobList.innerHTML = '<div class="p-3 text-red-500 text-center">岗位数据加载失败</div>';
+                recruitList.innerHTML = '<div class="p-4 text-red-500 text-center">招聘数据加载失败</div>';
+            }
+        }
+
+        // 页面加载完成后初始化
+        window.addEventListener('DOMContentLoaded', initPage);
+    </script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>未来职造：专业·岗位技能·招聘信息指南网</title>
+		<!-- 引入Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- 引入Font Awesome图标 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+		<!-- Tailwind自定义配置 -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: '#1E3A8A', // 主色调深蓝
+							secondary: '#3B82F6', // 辅助色亮蓝
+							tech: {
+								50: '#EFF6FF',
+								100: '#DBEAFE',
+								200: '#BFDBFE',
+								800: '#1E40AF',
+							}
+						},
+						fontFamily: {
+							sans: ['Inter', 'system-ui', 'sans-serif'],
+						},
+					}
+				}
+			}
+		</script>
+
+		<style type="text/tailwindcss">
+			@layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            /* 顶部导航项样式 */
+            .nav-item {
+                @apply px-4 py-2 rounded-md transition-all duration-300 hover:bg-secondary/20 hover:text-white;
+            }
+            /* 左侧栏目导航项 */
+            .category-item {
+                @apply p-4 rounded-xl transition-all duration-300 hover:bg-tech-100 hover:text-primary font-medium border-l-4 border-transparent hover:border-secondary cursor-pointer flex items-center;
+            }
+            /* 右侧技巧列表项 */
+            .interview-item {
+                @apply p-5 rounded-xl bg-white shadow-sm border border-tech-200/50 transition-all duration-300 hover:shadow-md hover:bg-tech-50 cursor-pointer;
+            }
+            /* 分页样式 */
+            .pagination-item {
+                @apply w-9 h-9 flex items-center justify-center rounded-md border border-tech-200 text-gray-700 hover:bg-secondary hover:text-white hover:border-secondary transition-all duration-200;
+            }
+            .pagination-item.active {
+                @apply bg-secondary text-white border-secondary;
+            }
+            .pagination-item.disabled {
+                @apply opacity-50 cursor-not-allowed hover:bg-transparent hover:text-gray-700 hover:border-tech-200;
+            }
+        }
+    </style>
+	</head>
+	<body class="bg-gray-50 font-sans text-gray-800 min-h-screen flex flex-col">
+		<!-- 头部导航 -->
+		<header class="bg-primary text-white shadow-md sticky top-0 z-50">
+			<div class="container mx-auto px-4">
+				<!-- Logo和标题 -->
+				<div class="flex items-center justify-between py-4">
+					<div class="flex items-center space-x-3">
+						<div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+							<i class="fa-solid fa-briefcase text-2xl"></i>
+						</div>
+						<h1 class="text-xl md:text-2xl font-bold">未来职造：专业·岗位技能·招聘信息指南网</h1>
+					</div>
+
+					<!-- 移动端菜单按钮 -->
+					<button id="menuBtn" class="md:hidden text-white text-2xl">
+						<i class="fa-solid fa-bars"></i>
+					</button>
+
+					<!-- 导航菜单 - 桌面端 -->
+					<nav class="hidden md:flex items-center space-x-1">
+						<a href="index.html" class="av-item">网站首页</a>
+						<a href="majors.html" class="nav-item">专业列表</a>
+						<a href="skills.html" class="nav-item">岗位技能</a>
+						<a href="recruitments.html" class="nav-item">招聘信息</a>
+						<a href="news.html" class="nav-item">就业新闻</a>
+						<a href="policies.html" class="nav-item">就业政策</a>
+						<a href="interview.html" class="nav-item bg-secondary/30 font-medium">面试技巧</a>
+					</nav>
+				</div>
+
+				<!-- 移动端导航菜单 -->
+				<nav id="mobileMenu" class="md:hidden hidden pb-4">
+					<div class="flex flex-col space-y-2">
+						<a href="index.html" class="nav-item">网站首页</a>
+						<a href="majors.html" class="nav-item">专业列表</a>
+						<a href="skills.html" class="nav-item">岗位技能</a>
+						<a href="recruitments.html" class="nav-item">招聘信息</a>
+						<a href="news.html" class="nav-item">就业新闻</a>
+						<a href="policies.html" class="nav-item">就业政策</a>
+						<a href="interview.html" class="nav-item bg-secondary/30 font-medium">面试技巧</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- 主要内容区 -->
+		<main class="flex-1 container mx-auto px-4 py-8">
+			<!-- 页面标题 -->
+			<div class="mb-8">
+				<h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-primary flex items-center">
+					<i class="fa-solid fa-comments text-secondary mr-3"></i>面试技巧
+				</h2>
+				<p class="text-gray-600 mt-2">打造吸睛求职文书，掌握答题思路，强化面试应答技巧</p>
+			</div>
+
+			<!-- 两栏布局 -->
+			<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+				<!-- 左侧：栏目导航 -->
+				<div class="lg:col-span-3 bg-white rounded-xl shadow-sm p-4 h-fit sticky top-24">
+					<h3 class="text-xl font-semibold text-primary mb-4 flex items-center border-b border-tech-200 pb-3">
+						<i class="fa-solid fa-list-ul text-secondary mr-2"></i>栏目导航
+					</h3>
+					<div id="categoryNav" class="space-y-2">
+						<!-- 栏目列表会通过JS生成 -->
+					</div>
+				</div>
+
+				<!-- 右侧：技巧信息列表 -->
+				<div class="lg:col-span-9">
+					<div class="bg-white rounded-xl shadow-sm p-4 mb-4">
+						<h3 id="contentTitle"
+							class="text-xl font-semibold text-primary mb-4 flex items-center border-b border-tech-200 pb-3">
+							<i class="fa-solid fa-handshake-angle text-secondary mr-2"></i>技巧信息
+						</h3>
+						<div id="interviewList" class="space-y-4 max-h-[600px] overflow-y-auto pr-2">
+							<!-- 加载提示 -->
+							<div class="p-4 text-gray-500 text-center" id="loadingTip">加载中...</div>
+						</div>
+					</div>
+
+					<!-- 分页控件 -->
+					<div id="pagination" class="flex justify-center items-center space-x-2 py-4">
+						<!-- 分页内容会通过JS生成 -->
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- 页脚 -->
+		<footer class="bg-primary text-white py-6 mt-auto">
+			<div class="container mx-auto px-4 text-center">
+				<p>&copy; 2026 未来职造 - 专业·岗位技能·招聘信息指南网 版权所有</p>
+				<p class="text-sm text-tech-200 mt-2">本网站仅提供就业信息参考，具体以官方发布为准</p>
+			</div>
+		</footer>
+
+		<!-- JavaScript交互逻辑 -->
+		<script>
+			// 全局变量
+			const categoryNav = document.getElementById('categoryNav');
+			const contentTitle = document.getElementById('contentTitle');
+			const interviewList = document.getElementById('interviewList');
+			const pagination = document.getElementById('pagination');
+			const loadingTip = document.getElementById('loadingTip');
+			let selectedCategory = "简历制作"; // 默认选中第一个栏目
+			let currentPage = 1; // 当前页码
+			const pageSize = 3; // 每页显示条数
+			// 存储从JSON加载的数据
+			let allInterviewData = [];
+			// 硬编码分类及对应icon
+			const categoryConfig = [{
+					name: "简历制作",
+					icon: "fa-file-pen"
+				},
+				{
+					name: "面试题库",
+					icon: "fa-question-circle"
+				},
+				{
+					name: "应答技巧",
+					icon: "fa-comments-dollar"
+				}
+			];
+
+			// 移动端菜单切换
+			const menuBtn = document.getElementById('menuBtn');
+			const mobileMenu = document.getElementById('mobileMenu');
+			menuBtn.addEventListener('click', () => {
+				mobileMenu.classList.toggle('hidden');
+				const icon = menuBtn.querySelector('i');
+				icon.classList.toggle('fa-bars');
+				icon.classList.toggle('fa-times');
+			});
+
+			// 1. 加载JSON数据
+			async function loadInterviewData() {
+				try {
+					// 加载外部JSON文件
+					const response = await fetch('data/interview.json');
+					if (!response.ok) {
+						throw new Error(`加载失败：${response.status}`);
+					}
+					allInterviewData = await response.json();
+
+					// 隐藏加载提示
+					loadingTip.remove();
+
+					// 初始化页面
+					renderCategoryNav();
+					updateContentTitle();
+					renderInterviewList();
+					renderPagination();
+				} catch (error) {
+					// 加载失败提示
+					loadingTip.textContent = `加载失败：${error.message}`;
+					console.error('加载JSON数据出错：', error);
+				}
+			}
+
+			// 2. 渲染栏目导航列表
+			function renderCategoryNav() {
+				categoryNav.innerHTML = '';
+				categoryConfig.forEach(category => {
+					const item = document.createElement('div');
+					item.className =
+						`category-item ${selectedCategory === category.name ? 'bg-tech-100 text-primary border-secondary' : ''}`;
+					item.innerHTML = `
+                    <i class="fa-solid ${category.icon} text-secondary mr-3"></i>
+                    <span>${category.name}</span>
+                `;
+
+					// 点击栏目切换右侧内容
+					item.addEventListener('click', () => {
+						selectedCategory = category.name;
+						currentPage = 1; // 切换栏目时重置页码
+						renderCategoryNav(); // 重新渲染栏目列表（高亮选中项）
+						renderInterviewList(); // 渲染对应技巧列表
+						updateContentTitle(); // 更新右侧标题
+						renderPagination(); // 渲染分页控件
+					});
+
+					categoryNav.appendChild(item);
+				});
+			}
+
+			// 3. 更新右侧内容标题
+			function updateContentTitle() {
+				const selectedCategoryInfo = categoryConfig.find(c => c.name === selectedCategory);
+				if (selectedCategoryInfo) {
+					contentTitle.innerHTML = `
+                    <i class="fa-solid ${selectedCategoryInfo.icon} text-secondary mr-2"></i>${selectedCategoryInfo.name}
+                `;
+				}
+			}
+
+			// 4. 获取当前分类的所有数据
+			function getCategoryAllData() {
+				return allInterviewData.filter(item => item.category === selectedCategory);
+			}
+
+			// 5. 获取当前页数据
+			function getCurrentPageData() {
+				const allData = getCategoryAllData();
+				const startIndex = (currentPage - 1) * pageSize;
+				const endIndex = startIndex + pageSize;
+				return allData.slice(startIndex, endIndex);
+			}
+
+			// 6. 获取总页数
+			function getTotalPages() {
+				const allData = getCategoryAllData();
+				return Math.ceil(allData.length / pageSize);
+			}
+
+			// 7. 渲染技巧列表
+			function renderInterviewList() {
+				interviewList.innerHTML = '';
+				const currentData = getCurrentPageData();
+
+				if (currentData.length === 0) {
+					interviewList.innerHTML = '<div class="p-4 text-gray-500 text-center">暂无相关技巧信息</div>';
+					return;
+				}
+
+				currentData.forEach(interview => {
+					const item = document.createElement('div');
+					item.className = 'interview-item';
+					// 技巧项内容：标题+日期居上，内容居下
+					item.innerHTML = `
+                    <div class="mb-3 flex items-center justify-between">
+                        <h4 class="text-lg font-semibold text-primary truncate w-[80%]">${interview.title}</h4>
+                        <span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded flex-shrink-0">${interview.publish_date}</span>
+                    </div>
+                    <p class="text-sm text-gray-600 line-clamp-3 mb-3">${interview.content}</p>
+                    <a href="interview-detail.html?id=${interview.id}&category=${encodeURIComponent(selectedCategory)}" class="text-secondary hover:text-primary font-medium text-sm flex items-center">
+                        查看详情 <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                    </a>
+                `;
+
+					// 点击标题跳转至技巧详情页
+					const titleElement = item.querySelector('h4');
+					const detailLink = item.querySelector('a');
+
+					// 标题点击跳转
+					titleElement.addEventListener('click', () => {
+						window.location.href =
+							`interview-detail.html?id=${interview.id}&category=${encodeURIComponent(selectedCategory)}`;
+					});
+
+					// 卡片点击跳转（排除详情链接区域）
+					item.addEventListener('click', (e) => {
+						if (e.target !== detailLink && !detailLink.contains(e.target) && e.target !==
+							titleElement) {
+							window.location.href =
+								`interview-detail.html?id=${interview.id}&category=${encodeURIComponent(selectedCategory)}`;
+						}
+					});
+
+					interviewList.appendChild(item);
+				});
+			}
+
+			// 8. 渲染分页控件
+			function renderPagination() {
+				pagination.innerHTML = '';
+				const totalPages = getTotalPages();
+				const allData = getCategoryAllData();
+
+				// 无数据时隐藏分页
+				if (allData.length === 0) {
+					pagination.style.display = 'none';
+					return;
+				}
+				pagination.style.display = 'flex';
+
+				// 上一页按钮
+				const prevBtn = document.createElement('button');
+				prevBtn.className = `pagination-item ${currentPage === 1 ? 'disabled' : ''}`;
+				prevBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+				prevBtn.addEventListener('click', () => {
+					if (currentPage > 1) {
+						currentPage--;
+						renderInterviewList();
+						renderPagination();
+						// 滚动到列表顶部
+						interviewList.scrollTop = 0;
+					}
+				});
+				pagination.appendChild(prevBtn);
+
+				// 数字页码（最多显示5个页码）
+				const showPages = 5;
+				let startPage = Math.max(1, currentPage - Math.floor(showPages / 2));
+				let endPage = startPage + showPages - 1;
+
+				if (endPage > totalPages) {
+					endPage = totalPages;
+					startPage = Math.max(1, endPage - showPages + 1);
+				}
+
+				for (let i = startPage; i <= endPage; i++) {
+					const pageBtn = document.createElement('button');
+					pageBtn.className = `pagination-item ${currentPage === i ? 'active' : ''}`;
+					pageBtn.textContent = i;
+					pageBtn.addEventListener('click', () => {
+						currentPage = i;
+						renderInterviewList();
+						renderPagination();
+						// 滚动到列表顶部
+						interviewList.scrollTop = 0;
+					});
+					pagination.appendChild(pageBtn);
+				}
+
+				// 下一页按钮
+				const nextBtn = document.createElement('button');
+				nextBtn.className = `pagination-item ${currentPage === totalPages ? 'disabled' : ''}`;
+				nextBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+				nextBtn.addEventListener('click', () => {
+					if (currentPage < totalPages) {
+						currentPage++;
+						renderInterviewList();
+						renderPagination();
+						// 滚动到列表顶部
+						interviewList.scrollTop = 0;
+					}
+				});
+				pagination.appendChild(nextBtn);
+			}
+
+			// 页面加载时执行
+			window.addEventListener('DOMContentLoaded', loadInterviewData);
+		</script>
+	</body>
+</html>

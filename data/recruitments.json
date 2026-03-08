@@ -1,0 +1,825 @@
+[{
+		"id": 1,
+		"title": "后端开发工程师",
+		"company_name": "字节跳动科技有限公司",
+		"company_logo": "https://picsum.photos/id/61/80/80",
+		"job_description": "负责公司核心业务后端系统开发，参与高并发架构设计与优化，保障系统稳定性和性能。要求熟练掌握Java/Go语言，精通SpringCloud微服务框架，有MySQL分库分表实战经验优先。",
+		"skills_id": 1
+	},
+	{
+		"id": 2,
+		"title": "后端开发工程师",
+		"company_name": "阿里巴巴集团",
+		"company_logo": "https://picsum.photos/id/62/80/80",
+		"job_description": "参与电商平台后端研发，设计高可用数据存储方案，对接Redis缓存集群。需熟悉Python/Django框架，具备大型分布式系统开发经验。",
+		"skills_id": 1
+	},
+	{
+		"id": 3,
+		"title": "后端开发工程师",
+		"company_name": "腾讯科技（深圳）有限公司",
+		"company_logo": "https://picsum.photos/id/63/80/80",
+		"job_description": "负责社交产品后端模块开发，优化接口响应速度，解决高并发场景下的技术难题。要求掌握Java，了解微服务治理，有Redis实战经验。",
+		"skills_id": 1
+	},
+	{
+		"id": 4,
+		"title": "后端开发工程师",
+		"company_name": "百度在线网络技术（北京）有限公司",
+		"company_logo": "https://picsum.photos/id/64/80/80",
+		"job_description": "参与搜索引擎后端系统迭代，设计数据处理流程，提升检索效率。需精通SpringCloud框架，熟悉MySQL优化，具备高可用系统设计能力。",
+		"skills_id": 1
+	},
+	{
+		"id": 5,
+		"title": "后端开发工程师",
+		"company_name": "华为技术有限公司",
+		"company_logo": "https://picsum.photos/id/65/80/80",
+		"job_description": "负责企业级云服务后端开发，参与架构升级，保障服务高可用。要求掌握Java/Go，熟悉分布式数据库，有高并发系统开发经验。",
+		"skills_id": 1
+	},
+	{
+		"id": 6,
+		"title": "网络安全工程师",
+		"company_name": "奇安信科技集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/66/80/80",
+		"job_description": "负责客户网络安全渗透测试，发现系统漏洞并提供加固方案，跟进应急响应事件处理。要求熟悉网络攻防技术，了解等保2.0合规要求。",
+		"skills_id": 2
+	},
+	{
+		"id": 7,
+		"title": "网络安全工程师",
+		"company_name": "深信服科技股份有限公司",
+		"company_logo": "https://picsum.photos/id/67/80/80",
+		"job_description": "参与公司安全产品研发，开展漏洞扫描与验证，制定数据加密方案。需掌握渗透测试技能，熟悉各类网络协议。",
+		"skills_id": 2
+	},
+	{
+		"id": 8,
+		"title": "网络安全工程师",
+		"company_name": "启明星辰信息技术集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/68/80/80",
+		"job_description": "负责政企客户安全加固工作，定期开展安全巡检，处理安全应急事件。要求了解等保合规，具备漏洞分析能力。",
+		"skills_id": 2
+	},
+	{
+		"id": 9,
+		"title": "网络安全工程师",
+		"company_name": "绿盟科技集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/69/80/80",
+		"job_description": "开展网络安全攻防演练，编写安全分析报告，优化安全防护策略。需掌握数据加密技术，熟悉渗透测试流程。",
+		"skills_id": 2
+	},
+	{
+		"id": 10,
+		"title": "网络安全工程师",
+		"company_name": "天融信科技集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/70/80/80",
+		"job_description": "负责公司产品安全测试，发现安全漏洞并推动修复，参与安全合规审核。要求熟悉网络协议，具备应急响应能力。",
+		"skills_id": 2
+	},
+	{
+		"id": 11,
+		"title": "物联网开发工程师",
+		"company_name": "海尔智家股份有限公司",
+		"company_logo": "https://picsum.photos/id/71/80/80",
+		"job_description": "负责智能家居设备嵌入式开发，对接传感器数据，搭建物联网管理平台。要求掌握无线通信协议，具备智能硬件调试能力。",
+		"skills_id": 3
+	},
+	{
+		"id": 12,
+		"title": "物联网开发工程师",
+		"company_name": "美的集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/72/80/80",
+		"job_description": "参与工业物联网系统集成，调试传感器设备，优化数据传输方案。需熟悉嵌入式开发，了解物联网平台搭建流程。",
+		"skills_id": 3
+	},
+	{
+		"id": 13,
+		"title": "物联网开发工程师",
+		"company_name": "小米集团",
+		"company_logo": "https://picsum.photos/id/73/80/80",
+		"job_description": "负责智能硬件物联网模块开发，对接米家平台，解决设备通信问题。要求掌握传感器技术，具备物联网系统调试能力。",
+		"skills_id": 3
+	},
+	{
+		"id": 14,
+		"title": "物联网开发工程师",
+		"company_name": "移远通信技术股份有限公司",
+		"company_logo": "https://picsum.photos/id/74/80/80",
+		"job_description": "开展物联网通信模块开发，优化无线通信协议适配，保障设备联网稳定性。需熟悉物联网平台架构，具备集成能力。",
+		"skills_id": 3
+	},
+	{
+		"id": 15,
+		"title": "物联网开发工程师",
+		"company_name": "高新兴科技集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/75/80/80",
+		"job_description": "负责智慧城市物联网项目开发，调试各类智能终端，集成物联网数据平台。要求掌握嵌入式开发，具备硬件调试经验。",
+		"skills_id": 3
+	},
+	{
+		"id": 16,
+		"title": "游戏开发工程师",
+		"company_name": "腾讯游戏",
+		"company_logo": "https://picsum.photos/id/76/80/80",
+		"job_description": "参与大型手游逻辑开发，使用Unity引擎实现游戏玩法，优化渲染性能。要求精通C#，熟悉游戏物理引擎。",
+		"skills_id": 4
+	},
+	{
+		"id": 17,
+		"title": "游戏开发工程师",
+		"company_name": "网易游戏",
+		"company_logo": "https://picsum.photos/id/77/80/80",
+		"job_description": "负责端游特效开发，基于Unreal引擎实现视觉效果，优化游戏性能。需掌握C++，熟悉渲染技术。",
+		"skills_id": 4
+	},
+	{
+		"id": 18,
+		"title": "游戏开发工程师",
+		"company_name": "米哈游科技（上海）有限公司",
+		"company_logo": "https://picsum.photos/id/78/80/80",
+		"job_description": "参与开放世界游戏开发，设计游戏逻辑框架，优化资源加载效率。要求精通Unity，具备特效开发经验。",
+		"skills_id": 4
+	},
+	{
+		"id": 19,
+		"title": "游戏开发工程师",
+		"company_name": "完美世界（北京）软件科技发展有限公司",
+		"company_logo": "https://picsum.photos/id/79/80/80",
+		"job_description": "负责游戏物理系统开发，调试碰撞检测逻辑，提升游戏交互体验。需熟悉Unreal引擎，掌握C++编程。",
+		"skills_id": 4
+	},
+	{
+		"id": 20,
+		"title": "游戏开发工程师",
+		"company_name": "三七互娱网络科技集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/80/80/80",
+		"job_description": "参与休闲游戏开发，使用Unity实现核心玩法，优化游戏包体大小。要求掌握C#，具备游戏逻辑开发能力。",
+		"skills_id": 4
+	},
+	{
+		"id": 21,
+		"title": "经济分析师",
+		"company_name": "中金公司",
+		"company_logo": "https://picsum.photos/id/81/80/80",
+		"job_description": "跟踪宏观经济走势，构建计量模型分析数据，撰写行业研究报告。要求掌握微观经济分析方法，熟悉数据分析工具。",
+		"skills_id": 5
+	},
+	{
+		"id": 22,
+		"title": "经济分析师",
+		"company_name": "中信证券股份有限公司",
+		"company_logo": "https://picsum.photos/id/82/80/80",
+		"job_description": "分析行业发展趋势，预判市场走向，为投资决策提供数据支持。需熟悉计量模型，具备报告撰写能力。",
+		"skills_id": 5
+	},
+	{
+		"id": 23,
+		"title": "经济分析师",
+		"company_name": "国泰君安证券股份有限公司",
+		"company_logo": "https://picsum.photos/id/83/80/80",
+		"job_description": "研究宏观经济政策影响，分析企业财务数据，出具市场分析报告。要求掌握宏观经济分析方法，有行业研究经验。",
+		"skills_id": 5
+	},
+	{
+		"id": 24,
+		"title": "经济分析师",
+		"company_name": "华泰证券股份有限公司",
+		"company_logo": "https://picsum.photos/id/84/80/80",
+		"job_description": "搭建数据分析体系，跟踪产业经济数据，预判行业景气度。需熟悉数据分析工具，具备市场趋势预判能力。",
+		"skills_id": 5
+	},
+	{
+		"id": 25,
+		"title": "经济分析师",
+		"company_name": "申万宏源证券有限公司",
+		"company_logo": "https://picsum.photos/id/85/80/80",
+		"job_description": "负责区域经济研究，分析产业政策，撰写深度研究报告。要求掌握计量模型，具备行业分析能力。",
+		"skills_id": 5
+	},
+	{
+		"id": 26,
+		"title": "外贸专员",
+		"company_name": "阿里巴巴国际站",
+		"company_logo": "https://picsum.photos/id/86/80/80",
+		"job_description": "开发海外客户，处理外贸订单，撰写外贸函电，对接跨境电商平台运营。要求熟悉国际贸易术语，具备单证处理能力。",
+		"skills_id": 6
+	},
+	{
+		"id": 27,
+		"title": "外贸专员",
+		"company_name": "浙江义乌小商品城集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/87/80/80",
+		"job_description": "负责跨境贸易订单跟进，处理结算流程，维护海外客户关系。需掌握跨境电商平台运营，熟悉单证处理。",
+		"skills_id": 6
+	},
+	{
+		"id": 28,
+		"title": "外贸专员",
+		"company_name": "厦门建发股份有限公司",
+		"company_logo": "https://picsum.photos/id/88/80/80",
+		"job_description": "开展外贸客户开发，洽谈合作条款，处理进出口单证。要求熟悉国际贸易结算流程，具备函电撰写能力。",
+		"skills_id": 6
+	},
+	{
+		"id": 29,
+		"title": "外贸专员",
+		"company_name": "广州唯品会信息科技有限公司",
+		"company_logo": "https://picsum.photos/id/89/80/80",
+		"job_description": "负责跨境电商平台运营，优化产品Listing，开发海外市场。需熟悉外贸流程，具备客户开发能力。",
+		"skills_id": 6
+	},
+	{
+		"id": 30,
+		"title": "外贸专员",
+		"company_name": "宁波均胜电子股份有限公司",
+		"company_logo": "https://picsum.photos/id/90/80/80",
+		"job_description": "处理汽车零部件外贸订单，对接海关报关流程，维护海外客户。要求熟悉国际贸易术语，具备单证处理经验。",
+		"skills_id": 6
+	},
+	{
+		"id": 31,
+		"title": "企业管理顾问",
+		"company_name": "麦肯锡咨询（上海）有限公司",
+		"company_logo": "https://picsum.photos/id/91/80/80",
+		"job_description": "为企业提供运营管理诊断，优化业务流程，制定管理提升方案。要求掌握企业管理知识，具备方案制定能力。",
+		"skills_id": 7
+	},
+	{
+		"id": 32,
+		"title": "企业管理顾问",
+		"company_name": "波士顿咨询公司（BCG）",
+		"company_logo": "https://picsum.photos/id/92/80/80",
+		"job_description": "协助客户优化市场营销策略，梳理人力资源体系，提升企业运营效率。需熟悉人力资源管理知识，具备诊断能力。",
+		"skills_id": 7
+	},
+	{
+		"id": 33,
+		"title": "企业管理顾问",
+		"company_name": "贝恩公司",
+		"company_logo": "https://picsum.photos/id/93/80/80",
+		"job_description": "开展企业战略咨询，分析经营问题，制定流程优化方案。要求掌握市场营销知识，具备方案落地能力。",
+		"skills_id": 7
+	},
+	{
+		"id": 34,
+		"title": "企业管理顾问",
+		"company_name": "德勤咨询（上海）有限公司",
+		"company_logo": "https://picsum.photos/id/94/80/80",
+		"job_description": "为大中型企业提供管理咨询服务，优化组织架构，提升管理效率。需掌握企业运营管理知识，具备诊断能力。",
+		"skills_id": 7
+	},
+	{
+		"id": 35,
+		"title": "企业管理顾问",
+		"company_name": "普华永道咨询（深圳）有限公司",
+		"company_logo": "https://picsum.photos/id/95/80/80",
+		"job_description": "协助企业梳理管理流程，制定人力资源管理方案，解决运营痛点。要求具备企业诊断能力，熟悉管理方案制定。",
+		"skills_id": 7
+	},
+	{
+		"id": 36,
+		"title": "注册会计师",
+		"company_name": "普华永道中天会计师事务所",
+		"company_logo": "https://picsum.photos/id/96/80/80",
+		"job_description": "负责企业财务审计，编制财务报表，开展内控审计，提供税务筹划建议。要求精通财务核算，熟悉税务法规。",
+		"skills_id": 8
+	},
+	{
+		"id": 37,
+		"title": "注册会计师",
+		"company_name": "德勤华永会计师事务所",
+		"company_logo": "https://picsum.photos/id/97/80/80",
+		"job_description": "开展上市公司审计业务，审核财务数据，撰写审计报告，优化税务方案。需掌握财务软件操作，具备报表编制能力。",
+		"skills_id": 8
+	},
+	{
+		"id": 38,
+		"title": "注册会计师",
+		"company_name": "安永华明会计师事务所",
+		"company_logo": "https://picsum.photos/id/98/80/80",
+		"job_description": "负责企业税务审计，梳理税务合规性，制定税务筹划方案。要求精通审计流程，熟悉税务法规。",
+		"skills_id": 8
+	},
+	{
+		"id": 39,
+		"title": "注册会计师",
+		"company_name": "毕马威华振会计师事务所",
+		"company_logo": "https://picsum.photos/id/99/80/80",
+		"job_description": "开展企业内控审计，审核财务核算流程，提供财务优化建议。需具备财务报表编制能力，熟悉审计流程。",
+		"skills_id": 8
+	},
+	{
+		"id": 40,
+		"title": "注册会计师",
+		"company_name": "立信会计师事务所（特殊普通合伙）",
+		"company_logo": "https://picsum.photos/id/100/80/80",
+		"job_description": "负责中小企业财务审计，处理税务申报，提供合理避税建议。要求掌握财务软件，具备税务筹划能力。",
+		"skills_id": 8
+	},
+	{
+		"id": 41,
+		"title": "电子工程师",
+		"company_name": "华为技术有限公司",
+		"company_logo": "https://picsum.photos/id/101/80/80",
+		"job_description": "负责消费电子电路设计，绘制PCB版图，调试嵌入式系统，保障产品性能。要求掌握电子电路设计，熟悉示波器使用。",
+		"skills_id": 9
+	},
+	{
+		"id": 42,
+		"title": "电子工程师",
+		"company_name": "中兴通讯股份有限公司",
+		"company_logo": "https://picsum.photos/id/102/80/80",
+		"job_description": "参与通信设备硬件研发，调试嵌入式系统，测试电子元器件性能。需熟悉PCB绘制，具备设备调试能力。",
+		"skills_id": 9
+	},
+	{
+		"id": 43,
+		"title": "电子工程师",
+		"company_name": "京东方科技集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/103/80/80",
+		"job_description": "负责显示面板电子电路设计，调试驱动模块，优化产品功耗。要求掌握嵌入式系统开发，具备研发能力。",
+		"skills_id": 9
+	},
+	{
+		"id": 44,
+		"title": "电子工程师",
+		"company_name": "立讯精密工业股份有限公司",
+		"company_logo": "https://picsum.photos/id/104/80/80",
+		"job_description": "开展消费电子硬件调试，测试电路性能，优化PCB工艺。需熟悉测试仪器使用，具备电子设备研发经验。",
+		"skills_id": 9
+	},
+	{
+		"id": 45,
+		"title": "电子工程师",
+		"company_name": "深圳华强实业股份有限公司",
+		"company_logo": "https://picsum.photos/id/105/80/80",
+		"job_description": "负责电子元器件选型，设计小信号放大电路，调试产品功能。要求掌握PCB绘制，具备电路设计能力。",
+		"skills_id": 9
+	},
+	{
+		"id": 46,
+		"title": "通信工程师",
+		"company_name": "中国移动通信集团有限公司",
+		"company_logo": "https://picsum.photos/id/106/80/80",
+		"job_description": "负责5G基站维护，优化网络覆盖，调试通信设备，保障信号质量。要求熟悉移动通信技术，具备网络优化能力。",
+		"skills_id": 10
+	},
+	{
+		"id": 47,
+		"title": "通信工程师",
+		"company_name": "中国联合网络通信集团有限公司",
+		"company_logo": "https://picsum.photos/id/107/80/80",
+		"job_description": "开展光纤通信系统调试，设计通信组网方案，处理网络故障。需熟悉光纤通信技术，具备方案设计能力。",
+		"skills_id": 10
+	},
+	{
+		"id": 48,
+		"title": "通信工程师",
+		"company_name": "中国电信集团有限公司",
+		"company_logo": "https://picsum.photos/id/108/80/80",
+		"job_description": "负责5G网络优化，分析网络指标，调整基站参数，提升用户体验。要求掌握通信系统调试，具备优化能力。",
+		"skills_id": 10
+	},
+	{
+		"id": 49,
+		"title": "通信工程师",
+		"company_name": "爱立信（中国）通信有限公司",
+		"company_logo": "https://picsum.photos/id/109/80/80",
+		"job_description": "参与通信基站设计，调试设备功能，制定维护方案。需熟悉移动通信技术，具备基站维护能力。",
+		"skills_id": 10
+	},
+	{
+		"id": 50,
+		"title": "通信工程师",
+		"company_name": "诺基亚通信系统技术（北京）有限公司",
+		"company_logo": "https://picsum.photos/id/110/80/80",
+		"job_description": "负责通信方案设计，优化传输网络，处理通信故障。要求熟悉光纤通信技术，具备方案落地能力。",
+		"skills_id": 10
+	},
+	{
+		"id": 51,
+		"title": "自动化工程师",
+		"company_name": "西门子（中国）有限公司",
+		"company_logo": "https://picsum.photos/id/111/80/80",
+		"job_description": "负责工业自动化产线PLC编程，调试工控系统，优化控制算法。要求掌握PLC编程，熟悉工业机器人调试。",
+		"skills_id": 11
+	},
+	{
+		"id": 52,
+		"title": "自动化工程师",
+		"company_name": "三菱电机自动化（中国）有限公司",
+		"company_logo": "https://picsum.photos/id/112/80/80",
+		"job_description": "设计工控系统架构，编写PLC程序，调试自动化生产线。需熟悉智能控制算法，具备产线搭建能力。",
+		"skills_id": 11
+	},
+	{
+		"id": 53,
+		"title": "自动化工程师",
+		"company_name": "ABB（中国）有限公司",
+		"company_logo": "https://picsum.photos/id/113/80/80",
+		"job_description": "负责工业机器人调试，优化自动化产线流程，解决控制故障。要求掌握工控系统设计，具备产线优化能力。",
+		"skills_id": 11
+	},
+	{
+		"id": 54,
+		"title": "自动化工程师",
+		"company_name": "发那科机器人（上海）有限公司",
+		"company_logo": "https://picsum.photos/id/114/80/80",
+		"job_description": "编写机器人控制程序，调试自动化设备，优化生产节拍。需熟悉PLC编程，具备机器人调试经验。",
+		"skills_id": 11
+	},
+	{
+		"id": 55,
+		"title": "自动化工程师",
+		"company_name": "汇川技术股份有限公司",
+		"company_logo": "https://picsum.photos/id/115/80/80",
+		"job_description": "设计自动化控制方案，调试工控系统，优化算法性能。要求掌握智能控制算法，具备产线搭建能力。",
+		"skills_id": 11
+	},
+	{
+		"id": 56,
+		"title": "同声传译",
+		"company_name": "中国对外翻译有限公司",
+		"company_logo": "https://picsum.photos/id/116/80/80",
+		"job_description": "负责国际会议英汉口译，快速转换语言，准确传达专业术语。要求精通英汉口笔译，具备临场翻译能力。",
+		"skills_id": 12
+	},
+	{
+		"id": 57,
+		"title": "同声传译",
+		"company_name": "北京策马翻译有限公司",
+		"company_logo": "https://picsum.photos/id/117/80/80",
+		"job_description": "开展商务谈判同声传译，积累专业术语，保障翻译准确性。需掌握跨文化交际技巧，具备高强度翻译能力。",
+		"skills_id": 12
+	},
+	{
+		"id": 58,
+		"title": "同声传译",
+		"company_name": "上海外服翻译中心",
+		"company_logo": "https://picsum.photos/id/118/80/80",
+		"job_description": "负责大型展会同声传译，处理专业领域翻译需求，保证翻译流畅。要求精通英汉口译，具备临场应变能力。",
+		"skills_id": 12
+	},
+	{
+		"id": 59,
+		"title": "同声传译",
+		"company_name": "译国译民翻译服务有限公司",
+		"company_logo": "https://picsum.photos/id/119/80/80",
+		"job_description": "开展学术会议同声传译，准确翻译专业术语，把控翻译节奏。需熟悉跨文化交际，具备快速转换能力。",
+		"skills_id": 12
+	},
+	{
+		"id": 60,
+		"title": "同声传译",
+		"company_name": "新东方小语种培训学校",
+		"company_logo": "https://picsum.photos/id/120/80/80",
+		"job_description": "负责教学场景口译，翻译教材内容，指导学员翻译技巧。要求精通英汉口笔译，具备术语积累能力。",
+		"skills_id": 12
+	},
+	{
+		"id": 61,
+		"title": "环保工程师",
+		"company_name": "北京首创环保集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/121/80/80",
+		"job_description": "开展环境监测，设计污水处理方案，编写环境影响评价报告。要求掌握污染治理技术，熟悉环保法规。",
+		"skills_id": 13
+	},
+	{
+		"id": 62,
+		"title": "环保工程师",
+		"company_name": "北控水务集团有限公司",
+		"company_logo": "https://picsum.photos/id/122/80/80",
+		"job_description": "负责废气治理方案设计，调试处理设备，保障排放达标。需熟悉环境监测技术，具备方案落地能力。",
+		"skills_id": 13
+	},
+	{
+		"id": 63,
+		"title": "环保工程师",
+		"company_name": "东江环保股份有限公司",
+		"company_logo": "https://picsum.photos/id/123/80/80",
+		"job_description": "开展固废处理项目设计，评估环境影响，优化治理方案。要求掌握环保法规，具备环评报告撰写能力。",
+		"skills_id": 13
+	},
+	{
+		"id": 64,
+		"title": "环保工程师",
+		"company_name": "启迪环境科技发展股份有限公司",
+		"company_logo": "https://picsum.photos/id/124/80/80",
+		"job_description": "调试污水处理设备，优化工艺参数，保障水质达标。需熟悉污染治理技术，具备设备调试能力。",
+		"skills_id": 13
+	},
+	{
+		"id": 65,
+		"title": "环保工程师",
+		"company_name": "桑德环境资源股份有限公司",
+		"company_logo": "https://picsum.photos/id/125/80/80",
+		"job_description": "负责环境影响评价，设计废气治理方案，跟进项目验收。要求掌握环境监测技术，具备方案设计能力。",
+		"skills_id": 13
+	},
+	{
+		"id": 66,
+		"title": "药剂师",
+		"company_name": "国药集团药业股份有限公司",
+		"company_logo": "https://picsum.photos/id/126/80/80",
+		"job_description": "负责药品检验，审核处方调配，指导合理用药，保障药品质量。要求精通药典规范，熟悉药品管理法规。",
+		"skills_id": 14
+	},
+	{
+		"id": 67,
+		"title": "药剂师",
+		"company_name": "华润三九医药股份有限公司",
+		"company_logo": "https://picsum.photos/id/127/80/80",
+		"job_description": "参与药物研发，开展药品质量检测，制定质量管理方案。需熟悉处方调配，具备药品检验能力。",
+		"skills_id": 14
+	},
+	{
+		"id": 68,
+		"title": "药剂师",
+		"company_name": "扬子江药业集团有限公司",
+		"company_logo": "https://picsum.photos/id/128/80/80",
+		"job_description": "负责药品质量管理，审核药品入库，指导临床合理用药。要求精通药品管理法规，具备质量管理能力。",
+		"skills_id": 14
+	},
+	{
+		"id": 69,
+		"title": "药剂师",
+		"company_name": "云南白药集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/129/80/80",
+		"job_description": "开展药品检验，优化处方调配流程，保障用药安全。需熟悉药典规范，具备检验操作能力。",
+		"skills_id": 14
+	},
+	{
+		"id": 70,
+		"title": "药剂师",
+		"company_name": "老百姓大药房连锁股份有限公司",
+		"company_logo": "https://picsum.photos/id/130/80/80",
+		"job_description": "负责门店处方调配，指导顾客合理用药，管理药品库存。要求熟悉药品管理法规，具备用药指导能力。",
+		"skills_id": 14
+	},
+	{
+		"id": 71,
+		"title": "机械设计师",
+		"company_name": "三一重工股份有限公司",
+		"company_logo": "https://picsum.photos/id/131/80/80",
+		"job_description": "使用CAD绘制机械图纸，设计工程机械结构，开展有限元分析。要求掌握CAD/UG软件，熟悉加工工艺。",
+		"skills_id": 15
+	},
+	{
+		"id": 72,
+		"title": "机械设计师",
+		"company_name": "徐工集团工程机械股份有限公司",
+		"company_logo": "https://picsum.photos/id/132/80/80",
+		"job_description": "设计机械零部件，优化加工工艺，开展产品研发测试。需熟悉有限元分析，具备结构设计能力。",
+		"skills_id": 15
+	},
+	{
+		"id": 73,
+		"title": "机械设计师",
+		"company_name": "中联重科股份有限公司",
+		"company_logo": "https://picsum.photos/id/133/80/80",
+		"job_description": "使用UG进行三维建模，设计机械结构，优化产品性能。要求掌握机械加工工艺，具备研发能力。",
+		"skills_id": 15
+	},
+	{
+		"id": 74,
+		"title": "机械设计师",
+		"company_name": "潍柴动力股份有限公司",
+		"company_logo": "https://picsum.photos/id/134/80/80",
+		"job_description": "设计发动机零部件，开展有限元分析，优化装配工艺。需熟悉CAD软件，具备结构设计经验。",
+		"skills_id": 15
+	},
+	{
+		"id": 75,
+		"title": "机械设计师",
+		"company_name": "中国一拖集团有限公司",
+		"company_logo": "https://picsum.photos/id/135/80/80",
+		"job_description": "负责农业机械设计，绘制加工图纸，调试样机性能。要求掌握机械加工工艺，具备产品研发能力。",
+		"skills_id": 15
+	},
+	{
+		"id": 76,
+		"title": "土木工程师",
+		"company_name": "中国建筑股份有限公司",
+		"company_logo": "https://picsum.photos/id/136/80/80",
+		"job_description": "负责建筑结构设计，使用BIM技术建模，绘制施工图纸，管理施工现场。要求掌握施工技术，熟悉BIM应用。",
+		"skills_id": 16
+	},
+	{
+		"id": 77,
+		"title": "土木工程师",
+		"company_name": "中国中铁股份有限公司",
+		"company_logo": "https://picsum.photos/id/137/80/80",
+		"job_description": "参与铁路工程施工，编制工程预算，管理施工进度，保障工程质量。需熟悉建筑结构设计，具备现场管理能力。",
+		"skills_id": 16
+	},
+	{
+		"id": 78,
+		"title": "土木工程师",
+		"company_name": "中国铁建股份有限公司",
+		"company_logo": "https://picsum.photos/id/138/80/80",
+		"job_description": "设计桥梁结构，开展施工技术交底，处理现场技术问题。要求掌握工程管理知识，具备施工图绘制能力。",
+		"skills_id": 16
+	},
+	{
+		"id": 79,
+		"title": "土木工程师",
+		"company_name": "中国交建股份有限公司",
+		"company_logo": "https://picsum.photos/id/139/80/80",
+		"job_description": "负责道路工程设计，编制工程预算，优化施工方案。需熟悉BIM技术，具备工程预算能力。",
+		"skills_id": 16
+	},
+	{
+		"id": 80,
+		"title": "土木工程师",
+		"company_name": "上海建工集团股份有限公司",
+		"company_logo": "https://picsum.photos/id/140/80/80",
+		"job_description": "管理建筑施工现场，协调施工班组，把控工程质量与进度。要求掌握施工技术，具备现场管理能力。",
+		"skills_id": 16
+	},
+	{
+		"id": 81,
+		"title": "UI/UX设计师",
+		"company_name": "字节跳动科技有限公司",
+		"company_logo": "https://picsum.photos/id/141/80/80",
+		"job_description": "使用Figma设计产品界面，梳理交互逻辑，开展用户调研，优化用户体验。要求精通Figma/PS，具备原型制作能力。",
+		"skills_id": 17
+	},
+	{
+		"id": 82,
+		"title": "UI/UX设计师",
+		"company_name": "阿里巴巴集团",
+		"company_logo": "https://picsum.photos/id/142/80/80",
+		"job_description": "负责电商平台视觉设计，优化交互流程，制作产品原型，提升用户转化率。需熟悉用户体验设计，具备视觉设计能力。",
+		"skills_id": 17
+	},
+	{
+		"id": 83,
+		"title": "UI/UX设计师",
+		"company_name": "腾讯科技（深圳）有限公司",
+		"company_logo": "https://picsum.photos/id/143/80/80",
+		"job_description": "设计社交产品界面，梳理交互逻辑，开展用户测试，优化产品体验。要求掌握用户调研方法，具备原型制作能力。",
+		"skills_id": 17
+	},
+	{
+		"id": 84,
+		"title": "UI/UX设计师",
+		"company_name": "美团点评",
+		"company_logo": "https://picsum.photos/id/144/80/80",
+		"job_description": "负责本地生活产品UI设计，优化交互流程，制作动效原型，提升用户体验。需精通AE/PS，具备视觉设计经验。",
+		"skills_id": 17
+	},
+	{
+		"id": 85,
+		"title": "UI/UX设计师",
+		"company_name": "小米集团",
+		"company_logo": "https://picsum.photos/id/145/80/80",
+		"job_description": "设计智能家居APP界面，梳理交互逻辑，开展用户调研，优化产品体验。要求掌握交互设计，具备原型制作能力。",
+		"skills_id": 17
+	},
+	{
+		"id": 86,
+		"title": "小学全科教师",
+		"company_name": "新东方教育科技集团有限公司",
+		"company_logo": "https://picsum.photos/id/146/80/80",
+		"job_description": "负责小学语数外教学，设计课程教案，管理课堂秩序，沟通家校关系，持有教师资格证。要求掌握教学方法，熟悉儿童心理学。",
+		"skills_id": 18
+	},
+	{
+		"id": 87,
+		"title": "小学全科教师",
+		"company_name": "学而思教育科技有限公司",
+		"company_logo": "https://picsum.photos/id/147/80/80",
+		"job_description": "开展小学全科教学，优化教学设计，管理课堂纪律，跟进学生学习情况。需熟悉儿童心理学，具备课堂管理能力。",
+		"skills_id": 18
+	},
+	{
+		"id": 88,
+		"title": "小学全科教师",
+		"company_name": "好未来教育集团",
+		"company_logo": "https://picsum.photos/id/148/80/80",
+		"job_description": "设计小学特色课程，开展课堂教学，沟通家长反馈，提升学生成绩。要求掌握教学设计，具备家校沟通能力。",
+		"skills_id": 18
+	},
+	{
+		"id": 89,
+		"title": "小学全科教师",
+		"company_name": "公立小学（北京海淀区）",
+		"company_logo": "https://picsum.photos/id/149/80/80",
+		"job_description": "负责班级全科教学，管理班级事务，组织课外活动，沟通家校关系。需持有教师资格证，具备课堂管理能力。",
+		"skills_id": 18
+	},
+	{
+		"id": 90,
+		"title": "小学全科教师",
+		"company_name": "猿辅导在线教育",
+		"company_logo": "https://picsum.photos/id/150/80/80",
+		"job_description": "开展线上小学全科教学，设计直播课程，互动引导学生，跟进学习效果。要求掌握线上教学方法，熟悉儿童心理学。",
+		"skills_id": 18
+	},
+	{
+		"id": 91,
+		"title": "大数据分析师",
+		"company_name": "阿里巴巴集团",
+		"company_logo": "https://picsum.photos/id/151/80/80",
+		"job_description": "基于Hadoop/Spark处理电商数据，使用Python进行分析，制作可视化报表，搭建业务模型。要求掌握Hadoop生态，具备数据挖掘能力。",
+		"skills_id": 19
+	},
+	{
+		"id": 92,
+		"title": "大数据分析师",
+		"company_name": "腾讯科技（深圳）有限公司",
+		"company_logo": "https://picsum.photos/id/152/80/80",
+		"job_description": "分析用户行为数据，使用R语言建模，可视化数据结果，支撑产品决策。需熟悉Python/R，具备可视化能力。",
+		"skills_id": 19
+	},
+	{
+		"id": 93,
+		"title": "大数据分析师",
+		"company_name": "百度在线网络技术（北京）有限公司",
+		"company_logo": "https://picsum.photos/id/153/80/80",
+		"job_description": "处理搜索引擎数据，开展数据挖掘，搭建业务模型，优化检索效果。要求了解机器学习基础，具备建模能力。",
+		"skills_id": 19
+	},
+	{
+		"id": 94,
+		"title": "大数据分析师",
+		"company_name": "京东科技集团",
+		"company_logo": "https://picsum.photos/id/154/80/80",
+		"job_description": "分析供应链数据，使用Python处理数据，制作可视化报表，优化库存策略。需掌握Spark生态，具备数据分析能力。",
+		"skills_id": 19
+	},
+	{
+		"id": 95,
+		"title": "大数据分析师",
+		"company_name": "中国移动通信集团有限公司",
+		"company_logo": "https://picsum.photos/id/155/80/80",
+		"job_description": "分析用户通信数据，开展数据挖掘，搭建预测模型，支撑市场决策。要求熟悉Python，具备业务建模能力。",
+		"skills_id": 19
+	},
+	{
+		"id": 96,
+		"title": "AI算法工程师",
+		"company_name": "百度在线网络技术（北京）有限公司",
+		"company_logo": "https://picsum.photos/id/156/80/80",
+		"job_description": "研发自然语言处理算法，基于TensorFlow训练模型，优化模型精度，推动工程化落地。要求精通深度学习框架，具备调优能力。",
+		"skills_id": 20
+	},
+	{
+		"id": 97,
+		"title": "AI算法工程师",
+		"company_name": "阿里巴巴集团",
+		"company_logo": "https://picsum.photos/id/157/80/80",
+		"job_description": "开发计算机视觉算法，训练深度学习模型，优化推理速度，落地电商场景应用。需熟悉机器学习框架，具备模型训练能力。",
+		"skills_id": 20
+	},
+	{
+		"id": 98,
+		"title": "AI算法工程师",
+		"company_name": "腾讯科技（深圳）有限公司",
+		"company_logo": "https://picsum.photos/id/158/80/80",
+		"job_description": "研究推荐算法，训练机器学习模型，优化模型效果，支撑产品个性化推荐。要求掌握算法调优，具备工程化能力。",
+		"skills_id": 20
+	},
+	{
+		"id": 99,
+		"title": "AI算法工程师",
+		"company_name": "华为技术有限公司",
+		"company_logo": "https://picsum.photos/id/159/80/80",
+		"job_description": "开发5G场景AI算法，训练深度学习模型，优化部署效率，推动落地商用。需精通机器学习框架，具备调优经验。",
+		"skills_id": 20
+	},
+	{
+		"id": 100,
+		"title": "AI算法工程师",
+		"company_name": "商汤科技股份有限公司",
+		"company_logo": "https://picsum.photos/id/160/80/80",
+		"job_description": "研发计算机视觉算法，训练模型并调优，落地安防场景应用。要求掌握自然语言处理/计算机视觉算法，具备工程化能力。",
+		"skills_id": 20
+	},
+	{
+		"id": 101,
+		"title": "电商运营总监",
+		"company_name": "阿里巴巴集团",
+		"company_logo": "https://picsum.photos/id/161/80/80",
+		"job_description": "制定电商平台运营策略，操盘直播电商，分析数据优化用户增长，管理运营团队，整合供应链资源。要求掌握运营策略，具备团队管理能力。",
+		"skills_id": 21
+	},
+	{
+		"id": 102,
+		"title": "电商运营总监",
+		"company_name": "京东集团",
+		"company_logo": "https://picsum.photos/id/162/80/80",
+		"job_description": "负责自营电商运营，优化供应链，策划营销活动，分析数据提升GMV，管理运营团队。需熟悉直播电商，具备供应链整合能力。",
+		"skills_id": 21
+	},
+	{
+		"id": 103,
+		"title": "电商运营总监",
+		"company_name": "拼多多",
+		"company_logo": "https://picsum.photos/id/163/80/80",
+		"job_description": "制定平台运营策略，策划拼团活动，分析用户增长数据，管理运营团队，优化供应链。要求掌握数据分析，具备营销策划能力。",
+		"skills_id": 21
+	}
+]

@@ -1,0 +1,176 @@
+[{
+		"id": 1,
+		"name": "计算机科学与技术",
+		"major_code": "080901",
+		"major_logo": "https://picsum.photos/id/20/80/80",
+		"description": "涵盖编程、算法、人工智能、数据结构等核心课程，培养计算机系统开发与应用能力"
+	},
+	{
+		"id": 2,
+		"name": "软件工程",
+		"major_code": "080902",
+		"major_logo": "https://picsum.photos/id/21/80/80",
+		"description": "专注软件开发流程、项目管理、软件测试与维护，培养高级软件工程师"
+	},
+	{
+		"id": 3,
+		"name": "网络工程",
+		"major_code": "080903",
+		"major_logo": "https://picsum.photos/id/22/80/80",
+		"description": "学习网络架构设计、安全防护、云计算技术，培养网络规划与运维人才"
+	},
+	{
+		"id": 4,
+		"name": "信息安全",
+		"major_code": "080904",
+		"major_logo": "https://picsum.photos/id/23/80/80",
+		"description": "研究网络安全、数据加密、渗透测试，培养网络安全防护专业人才"
+	},
+	{
+		"id": 5,
+		"name": "物联网工程",
+		"major_code": "080905",
+		"major_logo": "https://picsum.photos/id/24/80/80",
+		"description": "融合传感器技术、嵌入式开发、智能硬件，打造物联网系统开发能力"
+	},
+	{
+		"id": 6,
+		"name": "数字媒体技术",
+		"major_code": "080906",
+		"major_logo": "https://picsum.photos/id/25/80/80",
+		"description": "结合游戏开发、影视特效、交互设计，培养数字内容创作人才"
+	},
+	{
+		"id": 7,
+		"name": "经济学",
+		"major_code": "020101",
+		"major_logo": "https://picsum.photos/id/26/80/80",
+		"description": "研究经济运行规律、宏观调控、市场分析，培养经济分析与管理人才"
+	},
+	{
+		"id": 8,
+		"name": "国际经济与贸易",
+		"major_code": "020401",
+		"major_logo": "https://picsum.photos/id/27/80/80",
+		"description": "专注国际贸易规则、跨境电商、国际结算，培养外贸专业人才"
+	},
+	{
+		"id": 9,
+		"name": "工商管理",
+		"major_code": "120201",
+		"major_logo": "https://picsum.photos/id/28/80/80",
+		"description": "涵盖企业管理、市场营销、人力资源，培养综合型管理人才"
+	},
+	{
+		"id": 10,
+		"name": "会计学",
+		"major_code": "120203",
+		"major_logo": "https://picsum.photos/id/29/80/80",
+		"description": "学习财务核算、审计、税务筹划，培养高级会计与财务管理人才"
+	},
+	{
+		"id": 11,
+		"name": "电子信息工程",
+		"major_code": "080701",
+		"major_logo": "https://picsum.photos/id/30/80/80",
+		"description": "研究电子设备与信息系统的设计、开发、应用与集成"
+	},
+	{
+		"id": 12,
+		"name": "通信工程",
+		"major_code": "080703",
+		"major_logo": "https://picsum.photos/id/31/80/80",
+		"description": "专注通信系统设计、移动通信、光纤通信技术，培养通信领域专业人才"
+	},
+	{
+		"id": 13,
+		"name": "自动化",
+		"major_code": "080801",
+		"major_logo": "https://picsum.photos/id/32/80/80",
+		"description": "融合控制理论、智能控制、工业自动化，培养自动化系统设计人才"
+	},
+	{
+		"id": 14,
+		"name": "英语",
+		"major_code": "050201",
+		"major_logo": "https://picsum.photos/id/33/80/80",
+		"description": "精通英语语言文学、翻译理论、跨文化交际，培养高级翻译与外语人才"
+	},
+	{
+		"id": 15,
+		"name": "环境工程",
+		"major_code": "082502",
+		"major_logo": "https://picsum.photos/id/34/80/80",
+		"description": "研究环境污染治理、环境监测、生态保护，培养环保工程专业人才"
+	},
+	{
+		"id": 16,
+		"name": "药学",
+		"major_code": "100701",
+		"major_logo": "https://picsum.photos/id/35/80/80",
+		"description": "学习药物研发、药品生产、药品检验，培养药学专业技术人才"
+	},
+	{
+		"id": 17,
+		"name": "机械设计制造及其自动化",
+		"major_code": "080202",
+		"major_logo": "https://picsum.photos/id/36/80/80",
+		"description": "专注机械设计、制造工艺、数控技术，培养机械工程专业人才"
+	},
+	{
+		"id": 18,
+		"name": "土木工程",
+		"major_code": "081001",
+		"major_logo": "https://picsum.photos/id/37/80/80",
+		"description": "研究建筑结构、施工技术、工程管理，培养土木工程设计与施工人才"
+	},
+	{
+		"id": 19,
+		"name": "视觉传达设计",
+		"major_code": "130502",
+		"major_logo": "https://picsum.photos/id/38/80/80",
+		"description": "涵盖平面设计、品牌设计、UI设计，培养视觉传达设计专业人才"
+	},
+	{
+		"id": 20,
+		"name": "小学教育",
+		"major_code": "040107",
+		"major_logo": "https://picsum.photos/id/39/80/80",
+		"description": "专注小学教育教学理论与实践，培养优秀小学教育工作者"
+	},
+	{
+		"id": 21,
+		"name": "数据科学与大数据技术",
+		"major_code": "080910",
+		"major_logo": "https://picsum.photos/id/40/80/80",
+		"description": "学习数据挖掘、大数据分析、数据可视化，培养大数据专业人才"
+	},
+	{
+		"id": 22,
+		"name": "人工智能",
+		"major_code": "080911",
+		"major_logo": "https://picsum.photos/id/41/80/80",
+		"description": "研究机器学习、深度学习、自然语言处理，培养人工智能研发人才"
+	},
+	{
+		"id": 23,
+		"name": "电子商务",
+		"major_code": "120801",
+		"major_logo": "https://picsum.photos/id/42/80/80",
+		"description": "融合电商运营、网络营销、供应链管理，培养电商专业运营人才"
+	},
+	{
+		"id": 24,
+		"name": "物流管理",
+		"major_code": "120601",
+		"major_logo": "https://picsum.photos/id/43/80/80",
+		"description": "研究物流系统规划、仓储管理、供应链优化，培养物流管理人才"
+	},
+	{
+		"id": 25,
+		"name": "法学",
+		"major_code": "030101",
+		"major_logo": "https://picsum.photos/id/44/80/80",
+		"description": "学习法律理论、诉讼实务、法律文书，培养法律专业人才"
+	}
+]
